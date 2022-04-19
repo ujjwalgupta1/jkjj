@@ -1,0 +1,6 @@
+<%= form_tag("pages/index2", method: "get") do %>
+<p><label for = "book_title">Title</label>:
+<%= text_field 'books', 'title' %></p>
+
+<%= submit_tag "submit" %>
+<% end %>

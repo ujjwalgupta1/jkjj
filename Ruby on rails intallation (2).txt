@@ -1,0 +1,40 @@
+First, Download Ruby from https://rubyinstaller.org/downloads/  
+Download Ruby+Devkit 2.7.5-1 (x64)
+Now, install the above file
+now open cmd :
+enter commands -
+default>	ruby -v
+default>	cd (where ruby 27-x64 is)
+C:\Ruby27-x64>	ridk enable
+C:\Ruby27-x64>	ridk install
+C:\Ruby27-x64> 	gem install json --platform=ruby
+
+Now, copy the folder rubygem-3.1.4 in ruby 27-x64
+
+enter in cmd -
+C:\Ruby27-x64\rubygems-3.1.4> 	gem install json --platform=ruby
+C:\Ruby27-x64\rubygems-3.1.4>	gem install rails
+C:\Ruby27-x64\rubygems-3.1.4>	rails -v
+
+Now, install Sublime specially "Sublime Text 2.0.2a x64 Setup version only"
+Now, intall yarn specially "yarn-1.22.5 version only"
+Create a folder in c:\ named as Rails Project
+enter command in cmd -
+C:\Ruby27-x64\rubygems-3.1.4>	cd C:\Rails Project
+C:\Rails Project>	rails new app --skip-git
+C:\Rails Project>	cd app
+C:\Rails Project\app>	bundle install
+
+Open, Sublime
+Open Folder C:\Rails Project\app
+Open the File gemfile
+Add command "gem 'tzinfo-data'" in the gemfile (anywhere in the file)
+On 40 number line remove the platform part from ',' till the end
+
+Enter command in cmd -
+C:\Rails Project\app>	bundle update
+C:\Rails Project\app>	rails s
+
+Now, Open your browser and enter in URL
+localhost:3000
+Your Rails is installed and running...

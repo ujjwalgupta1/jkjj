@@ -1,0 +1,2 @@
+<h1>helllo</h1>
+<h1><%= params[:books][:title]  %></h1>
